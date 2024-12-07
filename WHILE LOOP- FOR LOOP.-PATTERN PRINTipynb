@@ -1,0 +1,437 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "adfc5a55-6bf1-4f1c-8f58-cee1125da378",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# take nno of unites from consumer\n",
+    "# if no of unites < 150 per unit charge = 15Rs, fixed charges 250\n",
+    "# if charges > 150 and <250 per unite charge =25 Rs , fixed charges 350\n",
+    "# if charges > 250 and <350 per unite charge =35 Rs , fixed charges 450\n",
+    "# if charges > 350 per unite charge =45 Rs , fixed charges 1000\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "42dc29fd-67a1-4d7b-9242-ba4899c9184b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "units=int(input(\"Please enter the number of units you consumed in a Month : \"))\n",
+    "if(units>=150):\n",
+    "    perUniteCharges15\n",
+    "    fixedcharge=250.00\n",
+    "elif(units>=250):\n",
+    "    payAmount=(150*15)+(units+100)*25\n",
+    "    fixedcharge=350.00\n",
+    "elif(units<=300):\n",
+    "    payAmount=(100*1.5)+(200-100)*2.5+(units-200)*4\n",
+    "    fixedcharge=75.00\n",
+    "elif(units<=350):\n",
+    "    payAmount=(100*1.5)+(200-100)*2.5+(300-200)*4+(units-300)*5\n",
+    "    fixedcharge=100.00\n",
+    "else:\n",
+    "    payAmount=0\n",
+    "    fixedcharge=1500.00\n",
+    "\n",
+    "Total=payAmount+fixedcharge\n",
+    "print(\"Electicity bill\" ,Total)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "2089e2c2-b7fd-4923-ad9e-a1c3d3b470d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "1-Addition\n",
+      "2-Subtraction\n",
+      "3-Multiplication\n",
+      "4-Division\n",
+      " 20\n",
+      "Enter your Desired Number:  24\n",
+      "Enter your Desired Number:  24\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Select a valid option\n"
+     ]
+    }
+   ],
+   "source": [
+    "#menu driven Approach\n",
+    "option= input('''\n",
+    "1-Addition\n",
+    "2-Subtraction\n",
+    "3-Multiplication\n",
+    "4-Division\n",
+    "''')\n",
+    "number1=float(input('Enter your Desired Number: '))\n",
+    "number2=float(input('Enter your Desired Number: '))\n",
+    "if option=='1':\n",
+    "    print('Addition of',number1, 'and' ,number2, 'is:',number1+number2)\n",
+    "elif option=='2':\n",
+    "    print('Subtraction of' ,number1, 'and' ,number2, 'is:',number1-number2)\n",
+    "elif option=='1':\n",
+    "    print('Multiplication of' ,number1, 'and' ,number2, 'is:',number1*number2)\n",
+    "elif option=='1':\n",
+    "    print('Division of' ,number1, 'and' ,number2, 'is:',number1/number2)\n",
+    "else:\n",
+    "    print('Select a valid option')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "46073fdd-b8e0-4634-ada5-c0eafd062f83",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#ITERATIVE STATMENTS"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "08ffb796-cf24-4a06-85b3-11c59a01a51f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "i=2\n",
+    "while i<5:\n",
+    "    print(i)\n",
+    "    print('Iterative condition')\n",
+    "    i+=1\n",
+    "    print('I am out of loop')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9ae1b5da-b736-4960-ac49-735221701f32",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "num= int(input('Enter your no:'))\n",
+    "i=1\n",
+    "while i<11:\n",
+    "    print(num,'*',i,'='num*i)\n",
+    "    i+=1   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e87e4316-6877-4ffc-adc3-980ed0acdc89",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "jo=34\n",
+    "print(jo)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "4548d712-de00-43df-8a79-c44882a62954",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Guess your Number: 34\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Guess Higher\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Guess your Number: 90\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Guess Lower\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Guess your Number: 76\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Guess Lower\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Guess your Number: 54\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Guess Higher\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Guess your Number: 67\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Correct Guess\n",
+      "No of turns taken by user 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "#guess_game\n",
+    "\n",
+    "import random\n",
+    "jackpot=random.randint(1,100)\n",
+    "\n",
+    "guess_num=int(input('Guess your Number:'))\n",
+    "counter=1\n",
+    "while guess_num!=jackpot:\n",
+    "    if guess_num<jackpot:\n",
+    "        print('Guess Higher')\n",
+    "    else:\n",
+    "        print('Guess Lower')\n",
+    "    guess_num=int(input('Guess your Number:'))\n",
+    "    counter=counter+1\n",
+    "else:\n",
+    "    print('Correct Guess')\n",
+    "    print('No of turns taken by user',counter)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "6a065f12-5d5f-4bb6-a641-6438f81753e5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your num: 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2 * 1 = 2\n",
+      "2 * 2 = 4\n",
+      "2 * 3 = 6\n",
+      "2 * 4 = 8\n",
+      "2 * 5 = 10\n",
+      "2 * 6 = 12\n",
+      "2 * 7 = 14\n",
+      "2 * 8 = 16\n",
+      "2 * 9 = 18\n",
+      "2 * 10 = 20\n"
+     ]
+    }
+   ],
+   "source": [
+    "num= int(input('Enter your num:'))\n",
+    "i=1\n",
+    "while i<11:\n",
+    "    print(num,'*',i,'=',num*i)\n",
+    "    i+=1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0aa4cc51-a07a-46af-b290-7cdd96a9d6c4",
+   "metadata": {},
+   "source": [
+    "### FOR LOOP:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "c79edafa-fb03-43b6-ae3a-2a486c4fab43",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Apple\n",
+      "Cherry\n",
+      "Banana\n"
+     ]
+    }
+   ],
+   "source": [
+    "fruits= ['Apple','Cherry','Banana']\n",
+    "for i in fruits:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "2f8db7c7-059d-435c-bc7e-f4a4f8fdaaa4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10 Years ago 10000\n",
+      "9 Years ago 9091\n",
+      "8 Years ago 8265\n",
+      "7 Years ago 7514\n",
+      "6 Years ago 6831\n",
+      "5 Years ago 6210\n",
+      "4 Years ago 5645\n",
+      "3 Years ago 5132\n",
+      "2 Years ago 4665\n",
+      "1 Years ago 4241\n"
+     ]
+    }
+   ],
+   "source": [
+    "# the population of town is 10000 and is increasing at the rate of 10% every year.\n",
+    "# Findout population at the end of each last 10 years.\n",
+    "\n",
+    "current_pop=10000\n",
+    "for years in range(10,0,-1):\n",
+    "    print(years,'Years ago',current_pop)\n",
+    "    current_pop=round(current_pop/1.1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b3036f48-dd8f-4bc6-a0b2-41996645b5f1",
+   "metadata": {},
+   "source": [
+    "## NESTED LOOP:\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "39985026-c08a-4115-b6b4-5cd9a5763bfe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 1\n",
+      "1 2\n",
+      "1 3\n",
+      "2 1\n",
+      "2 2\n",
+      "2 3\n",
+      "3 1\n",
+      "3 2\n",
+      "3 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,4):\n",
+    "    for j in range(1,4):\n",
+    "        print(i,j)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "41236990-77dc-42e6-aac8-1886d1968eef",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your num of rows 3\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "*\n",
+      "**\n",
+      "***\n"
+     ]
+    }
+   ],
+   "source": [
+    "#pattern:\n",
+    "# #*\n",
+    "# ***\n",
+    "# ****\n",
+    "rows=int(input('Enter your num of rows'))\n",
+    "for i in range(1,rows+1):\n",
+    "    for j in range(1,i+1):\n",
+    "        print('*',end='')\n",
+    "    print()"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
